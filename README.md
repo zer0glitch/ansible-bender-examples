@@ -13,15 +13,6 @@ What is ansible-bender?
 **RHEL7 utilizing software collections**
 
 
-**Initializing a project**
-
-First we create a project called hello world, and then run the ansible-bender init to create our base playbook.yml
-
-```
-mkdir hello-world
-ansible-bender init
-```
-
 The playbook.yml
 
 ```
@@ -58,6 +49,15 @@ The playbook.yml
 
 
 Hello world example
+**Initializing a project**
+
+First we create a project called hello world, and then run the ansible-bender init to create our base playbook.yml
+
+```
+mkdir hello-world
+ansible-bender init
+```
+
 
 
 Hello world httpd example
