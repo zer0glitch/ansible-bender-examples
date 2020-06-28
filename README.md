@@ -55,6 +55,7 @@ First we create a project called hello world, and then run the ansible-bender in
 
 ```
 mkdir hello-world
+cd hello-world
 ansible-bender init
 ```
 
