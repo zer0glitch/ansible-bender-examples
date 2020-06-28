@@ -52,8 +52,6 @@ The playbook.yml
       state: present
 ```
 
-
-
 Hello world example
 **Initializing a project**
 
@@ -67,11 +65,9 @@ ansible-bender init
 
 Modify the hello-world2/playbook.yml, use the hello-world/playbook.yml as an example
 
-Build the playbook
+Build the image
 
 `cd hello-world2`
-
-Build the image
 
 `ansible-bender build playbook.yml`
 
