@@ -2,18 +2,18 @@
 
 What is ansible-bender?
 
-Installing ansible-bender
+*Installing ansible-bender
 
-- Fedora
+**Fedora
 
 `sudo dnf install -y buildah podman skopeo`
 
 `pip install ansible-bender --user`
 
-- RHEL7 utilizing software collections
+**RHEL7 utilizing software collections
 
 
-- Initializing a project
+**Initializing a project
 
 First we create a project called hello world
 
