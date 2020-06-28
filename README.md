@@ -7,6 +7,7 @@ Installing ansible-bender
 - Fedora
 
 `sudo dnf install -y buildah podman skopeo`
+
 `pip install ansible-bender --user`
 
 - RHEL7 utilizing software collections
