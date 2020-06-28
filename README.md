@@ -1,5 +1,9 @@
 # ansible-bender-examples
 
+Links
+[ansible-bender](b)
+[Red Hat ubi images](https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image)
+
 What is ansible-bender?
 
 *Installing ansible-bender*
@@ -88,6 +92,20 @@ Run an image using podman
 
 `podman run localhost/hello-world2:latest`
 
+By default the system will print out `Hello you`, `you` is default for the enviornment variable `NAME`.  If we would like to set the variable `NAME` this can be done by passing the environment variable during the `podman run` command
+
+`podman run --env 'NAME=Mickey' localhost/hello-world2:latest`
+
+You can also define a set of variables in a file.
+
+***Create a file named my.envs***
+`vim my.envs`
+
+Add a line to set the name variable
+
+`NAME=MickeyFromFile`
+
+`podman run --env-file my.envs localhost/hello-world2:latest`
 
 
 You will see the newly created image
