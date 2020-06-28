@@ -1,5 +1,5 @@
 ---
-- name: Containerized version of $project
+- name: Containerized version of hellow-world
   hosts: all
   vars:
     # configuration specific for ansible-bender
@@ -8,14 +8,14 @@
       target_image:
         # command to run by default when invoking the container
         cmd: /entrypoint.sh
-        name: $project
+        name: hello-world
       working_container:
         volumes:
         # mount this git repo to the working container at /src
         - "{{ playbook_dir }}:/src"
   tasks:
   - name: copy over the entrypoint template
-    file:
+    copy:
       src: entrypoint.sh
-      dest: /tmp/entrypoint.sh
+      dest: /entrypoint.sh
       mode: 0755

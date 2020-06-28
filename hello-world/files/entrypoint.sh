@@ -1,4 +1,8 @@
 #!/usr/bin/bash
 
+if [ -z $NAME ]
+then
+  NAME='you'
+fi
 
-Hello $NAME
+echo "Hello $NAME"
