@@ -1,7 +1,9 @@
 # ansible-bender-examples
 
 Links
+
 [ansible-bender](b)
+
 [Red Hat ubi images](https://www.redhat.com/en/blog/introducing-red-hat-universal-base-image)
 
 What is ansible-bender?
