@@ -54,17 +54,53 @@ Hello world example
 First we create a project called hello world, and then run the ansible-bender init to create our base playbook.yml
 
 ```
-mkdir hello-world
-cd hello-world
+mkdir hello-world2
+cd hello-world2
 ansible-bender init
 ```
 
+Modify the hello-world2/playbook.yml, use the hello-world/playbook.yml as an example
+
+Build the playbook
+
+`cd hello-world2`
+
+Build the image
+
+`ansible-bender build playbook.yml`
+
+
+View the images
+
+`podman images`
+
+
+```
+REPOSITORY                            TAG      IMAGE ID       CREATED          SIZE
+localhost/hello-world2                latest   797eb1160945   11 seconds ago   215 MB
+<none>                                <none>   26b0a5c76fce   14 seconds ago   215 MB
+<none>                                <none>   2c7bd99cae56   2 minutes ago    215 MB
+<none>                                <none>   2e8bbbd8218f   2 minutes ago    215 MB
+registry.access.redhat.com/ubi7/ubi   latest   be486c8f3852   11 days ago      215 MB
+```
+
+Run an image using podman
+
+`podman run localhost/hello-world2:latest`
+
+
+
+You will see the newly created image
 
 
 Hello world httpd example
 
 
 podman commands
+
+
+
+
 
 
 
