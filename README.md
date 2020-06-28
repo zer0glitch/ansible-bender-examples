@@ -80,6 +80,7 @@ View the images
 
 `podman images`
 
+You will see the newly created image
 
 ```
 REPOSITORY                            TAG      IMAGE ID       CREATED          SIZE
@@ -109,8 +110,6 @@ Add a line to set the name variable
 
 `podman run --env-file my.envs localhost/hello-world2:latest`
 
-
-You will see the newly created image
 
 
 Hello world httpd example
